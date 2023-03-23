@@ -17,15 +17,15 @@
         checkDivisibility();
 
 
-        function func() {
-            document.getElementsById("mydiv").innerText=
-            "Hello all its my last day";
-            document.getElementsById("mydiv").style.color="orange";
-        }
+        function displayDateTime() {
+        var currentDate=new Date();
+        var datetimeElement=document.getElementById("mydiv");
+        datetimeElement.innerHTML=currentDate;
+      }
     </script>
 </head>
 <body>
-    <button onclick="func()">Current date and time</button>
+    <button onclick="displayDateTime()">Current date and time</button>
     <h2>Current date and time is:</h2>
     <div id="mydiv">23-03-2023, 19:20</div>
 </body>
